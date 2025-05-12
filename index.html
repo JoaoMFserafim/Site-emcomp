@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Emcomp - Empresa Júnior de Computação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body class="main-bg">
+  <aside class="menu">
+    <section class="main-content main-content">
+      <h1>
+        <a href="#"><img src="assets\img\image.png" alt="Logo Emcomp" /></a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#serv">Serviços</a></li>
+          <li><a href="#nos">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </section>
+  </aside>
+
+  <main>
+    <section class="section hero">
+      <div class="hero-content">
+        <h2>Emcomp</h2>
+        <h3 class="hero-title">
+          <span class="destaque">Desenvolvendo</span>:
+          <span class="texto-animado" id="texto-animado"></span>
+          <span class="emoji-wrapper">💙🚀</span>
+        </h3>
+        <p class="hero-description">
+          Empresa junior de Computação do IF Sudeste MG campus Rio Pomba, há
+          mais de 12 anos desenvolvendo soluções digitais de excelência e
+          impactando realidades.
+        </p>
+
+        <div class="contact-form-container">
+          <button id="contact-toggle" class="contact-button">
+            Fale Conosco
+          </button>
+
+          <div id="contact-modal" class="contact-modal">
+            <div class="modal-content">
+              <span class="close-btn">&times;</span>
+              <h3>Entre em Contato</h3>
+              <form id="contactForm" action="https://formsubmit.co/joaomatheusserafim@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="obrigado.html" />
+                <input type="hidden" name="_subject" value="Novo contato via site Emcomp" />
+                <input type="hidden" name="_template" value="box" />
+                <input type="hidden" name="_captcha" value="false" />
+
+                <div class="form-group">
+                  <input type="text" id="name" name="name" required />
+                  <label for="name">Nome</label>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" required />
+                  <label for="email">E-mail</label>
+                </div>
+                <div class="form-group">
+                  <input type="text" id="subject" name="subject" required />
+                  <label for="subject">Assunto</label>
+                </div>
+                <div class="form-group">
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                  <label for="message">Mensagem</label>
+                </div>
+                <button type="submit" class="submit-btn">
+                  Enviar Mensagem
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="serv" class="section services">
+      <div class="content">
+        <h2>
+          Soluções que fazem a <span class="diferença">Diferença</span>:
+        </h2>
+        <p>
+          Desenvolvemos sites, aplicativos, estrategias de marketing e
+          sistemas web sob medida para levar sua empresa ao próximo nível.
+        </p>
+      </div>
+      <div>
+        <h2>Hospedagem de sites</h2>
+        <h2>Desenvolvimento de sistemas</h2>
+        <h2>Marketing digital</h2>
+      </div>
+    </section>
+
+    <section class="section diferenciis">
+      <div class="diferenciais-container">
+        <h2>Nossos <span class="destaque">Diferenciais</span></h2>
+        <div class="diferenciais-grid">
+          <div class="diferencial-item">
+            <div class="icone">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <h3>Atendimento Personalizado</h3>
+            <p>
+              Nossos analistas atendem individualmente cada cliente,
+              desenhando juntos uma solução.
+            </p>
+          </div>
+
+          <div class="diferencial-item foco-cliente">
+            <div class="icone">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3>Foco no Cliente</h3>
+            <p>
+              Do conceito ao produto final, solucionamos problemas e
+              entregamos resultados únicos.
+            </p>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icone">
+              <i class="far fa-clock"></i>
+            </div>
+            <h3>Entrega Rápida</h3>
+            <p>
+              Nossa equipe é altamente treinada, desenvolvendo a melhor
+              solução no menor tempo.
+            </p>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icone">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Design Exclusivo</h3>
+            <p>
+              Projetos 100% personalizados, alinhados à sua marca para um
+              visual moderno e profissional.
+            </p>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icone">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3>Compromisso com a Excelência</h3>
+            <p>
+              Unimos conhecimento e inovação para entregar projetos de alto
+              nível.
+            </p>
+          </div>
+
+          <div class="diferencial-item">
+            <div class="icone">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>Atendimento com Transparência</h3>
+            <p>
+              Agimos com ética, respeito e total transparência nas nossas
+              relações com clientes e parceiros.
+            </p>
+          </div>
+        </div>
+      </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    </section>
+    <section id="about" class="section sobre-nos sobre-nos-estrutura">
+      <div class="sobre-nos-container">
+        <div class="sobre-nos-texto">
+          <h2 class="section-title">Sobre Nós</h2>
+          <p>
+            A EmComp é uma empresa júnior de Rio Pomba que oferece serviços de
+            hospedagem de sites, desenvolvimento de sistemas e marketing digital. Com
+            uma equipe de estudantes dedicados, a empresa proporciona soluções
+            inovadoras e eficientes, ajudando clientes a estabelecerem uma presença
+            online sólida e a alcançarem seus objetivos de negócio.
+          </p>
+          <p>
+            Somos uma equipe apaixonada por tecnologia e inovação, comprometida em
+            entregar resultados de excelência para nossos clientes. Buscamos sempre
+            o aprimoramento constante e o desenvolvimento de soluções criativas e
+            personalizadas.
+          </p>
+          <p>
+            Acreditamos no poder da colaboração e no impacto positivo que podemos
+            gerar no mercado e na sociedade através da computação.
+          </p>
+        </div>
+        <div class="sobre-nos-imagem">
+          <img src="assets/img/Cópia de Branca_EmComp_Vertical.png" alt="Imagem Sobre Nós"
+            style="max-width: 100%; height: auto; border-radius: 8px;">
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Emcomp</h3>
+        <p>
+          Empresa Júnior de Computação do IF Sudeste MG campus Rio Pomba.
+          Desenvolvendo soluções digitais com excelência e impacto.
+        </p>
+      </div>
+      <div class="footer-section">
+        <h3>Contato</h3>
+        <p>Rio Pomba - MG, Brasil</p>
+        <p>Email: contato@emcomp.com.br (fictício)</p>
+        <p>Telefone: (XX) XXXXX-XXXX (fictício)</p>
+      </div>
+      <div class="footer-section navigation-social">
+        <div>
+          <h3>Navegação</h3>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#serv">Serviços</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </div>
+        <div class="social">
+          <h3>Siga-nos: </h3>
+          <a href="https://www.instagram.com/emcomp/" target="_blank" aria-label="Link para o Instagram da Emcomp" style="color: var(--text-light); vertical-align: middle;"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Emcomp - Todos os direitos reservados.</p>
+      <p>Desenvolvido por Emcomp</p>
+    </div>
+  </footer>
+
+  <script src="assets\js\script.js"></script>
+  <script>
+    // Controle do modal de contato
+    document.addEventListener("DOMContentLoaded", function () {
+      const modal = document.getElementById("contact-modal");
+      const toggleBtn = document.getElementById("contact-toggle");
+      const closeBtn = document.querySelector(".close-btn");
+      const form = document.getElementById("contactForm");
+
+      // Abrir modal
+      if (toggleBtn) {
+        toggleBtn.addEventListener("click", function () {
+          modal.classList.add("active");
+        });
+      }
+
+      // Fechar modal
+      if (closeBtn) {
+        closeBtn.addEventListener("click", function () {
+          modal.classList.remove("active");
+        });
+      }
+
+      // Fechar ao clicar fora do modal
+      modal.addEventListener("click", function (e) {
+        if (e.target === modal) {
+          modal.classList.remove("active");
+        }
+      });
+
+      // Controle do envio do formulário
+      if (form) {
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const submitBtn = form.querySelector(".submit-btn");
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.innerHTML =
+              'Enviando <span class="loading-dots"><span>.</span><span>.</span><span>.</span></span>';
+
+            // Adiciona animação dos pontos
+            const style = document.createElement("style");
+            style.innerHTML = `
+                        @keyframes dotPulse {
+                            0%, 100% { opacity: 0.2; }
+                            50% { opacity: 1; }
+                        }
+                        .loading-dots span {
+                            animation: dotPulse 1.4s infinite;
+                            display: inline-block;
+                        }
+                        .loading-dots span:nth-child(1) { animation-delay: 0s; }
+                        .loading-dots span:nth-child(2) { animation-delay: 0.2s; }
+                        .loading-dots span:nth-child(3) { animation-delay: 0.4s; }
+                    `;
+            document.head.appendChild(style);
+
+            // Envia o formulário
+            form.submit();
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
